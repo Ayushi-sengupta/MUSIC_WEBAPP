@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Web App</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
+  integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+  <div class="main_div">
+
+  	<div class="music_container">
+  		<h2 id="title">MY HEART</h2>
+  		<h3 id="artist">Small Tall Order</h3>
+
+  		<div class="img_container">
+  			<img src="images/m1.jpg" alt="">
+  		</div>
+
+  		<audio src= "music/m1.mp3" ></audio>
+  		<!-- controls -->
+  		<div class="music_controls">
+  			<i class="fas fa-backward"  id="prev" title="Previous"></i>
+  			<i class="fas fa-play main_button"  id="play" title="Play"></i>
+  			<i class="fas fa-forward"  id=next title="Next"></i>
+  		</div>
+  	</div>
+</div>
+<script src="script.js"></script>
+<!--<script>
+	const music = document.querySelector( "audio" );
+	const img = document.querySelector("img");
+	const play = document.getElementById("play");
+
+	let isPlaying = false;
+	//for play function
+	const playMusic = ()=> { 
+		isPlaying = true;
+		music.play();
+		play.classList.replace("fa-play", "fa-pause"); //for pause the music
+		img.classList.add("anime"); //rotate the img
+	};
+
+	//for pause function
+	const pauseMusic = ()=> { 
+		isPlaying = false;
+		music.pause();
+		play.classList.replace("fa-pause", "fa-play"); //for play the music
+		img.classList.remove("anime"); //// stop rotate the img
+	};
+
+		play.addEventListener("click", ()=> {
+			/*if(isPlaying){
+				pauseMusic();
+			}else{
+				playMusic();
+			}*/
+
+			isPlaying ? pauseMusic() : playMusic(); /*using ternary operator*/
+		});
+
+</script>-->
+
+</body>
+</html>
